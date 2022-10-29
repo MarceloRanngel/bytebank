@@ -5,10 +5,9 @@ class ContaPoupanca(
     titular = titular,
     numero = numero
 ) {
-    override fun sacar(valor: Double) {
-        if (this.saldo >= valor) {
+    override fun saca(valor: Double) {
+        if(this.saldo >= valor){
             this.saldo -= valor
         }
     }
-
 }
